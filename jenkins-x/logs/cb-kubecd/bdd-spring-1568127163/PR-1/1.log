@@ -45,34 +45,19 @@ upserted Pipeline cb-kubecd-bdd-spring-1568127163-ljf92-1
 created PipelineRun cb-kubecd-bdd-spring-1568127163-ljf92-1
 created PipelineStructure cb-kubecd-bdd-spring-1568127163-ljf92-1
 
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-credential-initializer-t8qgx[0m to start...
-
-
 Showing logs for build [32mmeta-cb-kubecd-bdd-spring-15681-t4chc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-t8qgx[0m
 {"level":"warn","ts":1568127657.1316516,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
 {"level":"info","ts":1568127657.1325085,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-working-dir-initializer-qxw6k[0m to start...
-
 
 Showing logs for build [32mmeta-cb-kubecd-bdd-spring-15681-t4chc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-qxw6k[0m
 {"level":"warn","ts":1568127658.0646868,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
 {"level":"info","ts":1568127658.0661643,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/charts/preview\""}
 
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-place-tools[0m to start...
-
-
 Showing logs for build [32mmeta-cb-kubecd-bdd-spring-15681-t4chc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-git-source-cb-kubecd-bdd-spring-1568127163-mfl62[0m to start...
-
 
 Showing logs for build [32mmeta-cb-kubecd-bdd-spring-15681-t4chc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-cb-kubecd-bdd-spring-1568127163-mfl62[0m
 {"level":"warn","ts":1568127668.2452397,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
 {"level":"info","ts":1568127669.4643407,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/cb-kubecd/bdd-spring-1568127163.git @ master in path /workspace/source"}
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-git-merge[0m to start...
-
 
 Showing logs for build [32mmeta-cb-kubecd-bdd-spring-15681-t4chc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:81413706098452b448d6948834d46a5e88385a20,1:99af8d005222ce4081cb47affead47f76055ebfd
@@ -82,9 +67,6 @@ DEBUG: ran git reset --hard 81413706098452b448d6948834d46a5e88385a20 in
 DEBUG: ran clean --force -d . in 
 DEBUG: ran git merge 99af8d005222ce4081cb47affead47f76055ebfd in 
 Merged SHA 99af8d005222ce4081cb47affead47f76055ebfd with commit message 'My first PR commit' into base branch master
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-set-version[0m to start...
-
 
 Showing logs for build [32mmeta-cb-kubecd-bdd-spring-15681-t4chc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-set-version[0m
 Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
@@ -109,9 +91,6 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 [INFO] Total time:  10.654 s
 [INFO] Finished at: 2019-09-10T15:01:24Z
 [INFO] ------------------------------------------------------------------------
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-mvn-install[0m to start...
-
 
 Showing logs for build [32mmeta-cb-kubecd-bdd-spring-15681-t4chc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-mvn-install[0m
 Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
@@ -210,14 +189,8 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 [INFO] Finished at: 2019-09-10T15:01:56Z
 [INFO] ------------------------------------------------------------------------
 
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-skaffold-version[0m to start...
-
-
 Showing logs for build [32mmeta-cb-kubecd-bdd-spring-15681-t4chc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-skaffold-version[0m
 v0.37.0
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-container-build[0m to start...
-
 
 Showing logs for build [32mmeta-cb-kubecd-bdd-spring-15681-t4chc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
 [36mINFO[0m[0000] Downloading base image openjdk:8-jdk-slim    
@@ -262,14 +235,8 @@ ERROR: logging before flag.Parse: E0910 15:01:58.135496       9 metadata.go:159]
 2019/09/10 15:02:06 pushed blob: sha256:8a041fc70670c7cefaeb8af99141951b0d1bbc2532adb2351f3542fc1f16a7e0
 2019/09/10 15:02:08 gcr.io/jenkins-x-bdd2/bdd-spring-1568127163:0.0.0-SNAPSHOT-PR-1-1: digest: sha256:b25259d38b98b47a14fbd666b209dc8805a79a5f4e3f142203a7e52b77593f0f size: 1244
 
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-postbuild-post-build[0m to start...
-
-
 Showing logs for build [32mmeta-cb-kubecd-bdd-spring-15681-t4chc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-postbuild-post-build[0m
 no CVE provider running in the current ** namespace so skip adding image to be analysed
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-promote-make-preview[0m to start...
-
 
 Showing logs for build [32mmeta-cb-kubecd-bdd-spring-15681-t4chc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-make-preview[0m
 sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-1-1/" Chart.yaml
@@ -286,9 +253,6 @@ Successfully added Helm repository jenkins-x-chartmuseum.
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
 Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
 Successfully added Helm repository chartmuseum.jenkins-x.io.
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-promote-jx-preview[0m to start...
-
 
 Showing logs for build [32mmeta-cb-kubecd-bdd-spring-15681-t4chc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-preview[0m
 Creating a preview
